@@ -4,6 +4,10 @@
     color: #333;
     font-family: Lato, sans-serif;
 }
+h1 {
+text-align: center;
+font-weight: 700;
+}
 .matrix-block {
     width: 500px;
     margin: 0 auto;
@@ -92,7 +96,7 @@ label[for="new-task"] {
     display: block;
     margin: 0 0 20px;
 }
-input #new-task {
+#new-task {
     width: 318px;
 }
 
