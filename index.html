@@ -35,7 +35,7 @@
           class="task"
           type="text"
           >
-            <button type="submit">
+            <button type="button">
               Add
             </button>
         </form>
@@ -55,24 +55,24 @@
             <img src="./remove.svg" alt="Remove task">
           </button>
         </li>
-        <li class="edit-mode" role="listitem">
+        <li role="listitem">
           <input type="checkbox">
           <label class="task">
             Go Shopping
           </label>
           <input
           type="text"
-          value="Go Shopping"
           class="task"
+          aria-label="Edit task"
           >
           <button class="edit">Save</button>
-          <button class="delete" aria-label="Remove task">
+          <button class="task__delete" aria-label="Remove task">
             <img src="./remove.svg" alt="Remove task">
           </button>
         </li>
       </ul>
-      <h3>Completed</h3>
-      <ul id="done-list">
+      <h3 id="completed-heading">Completed</h3>
+      <ul id="done-list" role="list" aria-labelledby="completed-heading">
         <li role="listitem">
           <input type="checkbox" checked>
           <label class="task">
@@ -82,7 +82,7 @@
           <button class="edit">
             Edit
           </button>
-          <button class="delete">
+          <button class="task__delete">
             <img src="./remove.svg" alt="Remove task">
           </button>
         </li>
